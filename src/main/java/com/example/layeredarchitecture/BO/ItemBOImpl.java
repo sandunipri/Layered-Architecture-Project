@@ -45,6 +45,4 @@ public class ItemBOImpl implements ItemBO{
         /*ItemDAO itemDAO= new ItemDAOImpl();*/
         return itemDAO.search(code);
         }
-
-
 }
