@@ -1,7 +1,7 @@
 package com.example.layeredarchitecture.controller;
 
-import com.example.layeredarchitecture.BO.CustomerB0Impl;
-import com.example.layeredarchitecture.dao.Custom.CustomerDAO;
+import com.example.layeredarchitecture.BO.Custom.Impl.CustomerB0Impl;
+import com.example.layeredarchitecture.BO.Custom.CustomerBo;
 import com.example.layeredarchitecture.dao.Custom.Impl.CustomerDAOImpl;
 import com.example.layeredarchitecture.model.CustomerDTO;
 import com.example.layeredarchitecture.view.tdm.CustomerTM;
@@ -40,7 +40,7 @@ public class ManageCustomersFormController {
     public JFXButton btnAddNewCustomer;
 
     //DI (Property Injection)
-    CustomerB0Impl customerB0 = new CustomerB0Impl();
+    CustomerBo customerB0 = new CustomerB0Impl();
 
     public void initialize() {
         tblCustomers.getColumns().get(0).setCellValueFactory(new PropertyValueFactory<>("id"));
